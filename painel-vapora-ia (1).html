@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Vapôrá - IA de Anúncios</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background: #cc0000;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      border-radius: 8px;
+    }
+    section {
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #cc0000;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .sugestao {
+      background: #e0ffe0;
+      border-left: 5px solid #009900;
+      padding: 15px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>Painel Vapôrá de Anúncios com IA 💡</header>
+
+  <section class="card">
+    <h2>🔍 Registro da Campanha</h2>
+    <label>Data:</label>
+    <input type="date">
+    <label>Plataforma:</label>
+    <input type="text" placeholder="Instagram, Facebook, etc">
+    <label>Tipo de Criativo:</label>
+    <input type="text" placeholder="Vídeo curto, Stories, Feed...">
+    <label>Alcance:</label>
+    <input type="number" placeholder="Ex: 3500">
+    <label>Cliques no link:</label>
+    <input type="number" placeholder="Ex: 120">
+    <label>Mensagens Recebidas:</label>
+    <input type="number" placeholder="Ex: 25">
+    <label>Valor gasto (R$):</label>
+    <input type="number" placeholder="Ex: 60">
+    <label>Observações:</label>
+    <textarea rows="4" placeholder="O que funcionou? O que melhorar?"></textarea>
+  </section>
+
+  <section class="card">
+    <h2>🤖 Sugestões Inteligentes da IA</h2>
+    <div class="sugestao">
+      Se o custo por mensagem for menor que R$2,00:<br>
+      👉 "Esse anúncio está performando bem! Considere aumentar o orçamento."
+    </div>
+    <div class="sugestao">
+      Se a taxa de cliques for baixa:<br>
+      ⚠️ "Considere trocar o criativo ou melhorar a chamada no texto."
+    </div>
+    <div class="sugestao">
+      Se poucas mensagens forem recebidas:<br>
+      🔁 "Reveja o público-alvo ou horário de exibição."
+    </div>
+  </section>
+
+</body>
+</html>
